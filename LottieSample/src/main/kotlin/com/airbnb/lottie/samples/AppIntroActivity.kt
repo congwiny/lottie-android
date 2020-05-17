@@ -1,7 +1,7 @@
 package com.airbnb.lottie.samples
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,7 +59,7 @@ class AppIntroActivity : IntroActivity() {
         animationView.progress = startProgress.lerp(endProgress, positionOffset)
     }
 
-    class EmptyFragment : androidx.fragment.app.Fragment() {
+    class EmptyFragment : android.support.v4.app.Fragment() {
 
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
             return container!!.inflate(R.layout.fragment_empty, false)

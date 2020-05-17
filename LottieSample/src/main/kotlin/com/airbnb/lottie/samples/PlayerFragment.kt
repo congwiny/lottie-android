@@ -9,14 +9,16 @@ import android.os.Bundle
 import android.util.Log
 import android.view.*
 import android.widget.EditText
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.children
-import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.Lifecycle
-import androidx.transition.AutoTransition
-import androidx.transition.TransitionManager
+import android.arch.lifecycle.Lifecycle
+import android.support.design.widget.BottomSheetBehavior
+import android.support.design.widget.Snackbar
+import android.support.transition.AutoTransition
+import android.support.transition.TransitionManager
+import android.support.v4.app.Fragment
+import android.support.v4.content.ContextCompat
+import android.support.v7.app.AppCompatActivity
+import androidx.view.children
+import androidx.view.isVisible
 import com.airbnb.lottie.*
 import com.airbnb.lottie.model.KeyPath
 import com.airbnb.lottie.samples.model.CompositionArgs
@@ -32,8 +34,7 @@ import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.snackbar.Snackbar
+
 import kotlinx.android.synthetic.main.bottom_sheet_key_paths.*
 import kotlinx.android.synthetic.main.bottom_sheet_render_times.*
 import kotlinx.android.synthetic.main.bottom_sheet_warnings.*

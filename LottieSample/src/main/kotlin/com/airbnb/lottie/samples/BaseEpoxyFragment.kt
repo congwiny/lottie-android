@@ -8,7 +8,6 @@ import com.airbnb.epoxy.AsyncEpoxyController
 import com.airbnb.epoxy.EpoxyController
 import com.airbnb.lottie.samples.R.id.recyclerView
 import com.airbnb.mvrx.BaseMvRxFragment
-import kotlinx.android.synthetic.main.fragment_base.*
 import kotlinx.android.synthetic.main.fragment_base.view.*
 
 
