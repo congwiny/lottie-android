@@ -16,14 +16,14 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import androidx.annotation.DrawableRes;
-import androidx.annotation.FloatRange;
-import androidx.annotation.MainThread;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RawRes;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.core.view.ViewCompat;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.FloatRange;
+import android.support.annotation.MainThread;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.annotation.RawRes;
+import android.support.v4.view.ViewCompat;
+import android.widget.ImageView;
 
 import com.airbnb.lottie.model.KeyPath;
 import com.airbnb.lottie.parser.moshi.JsonReader;
@@ -61,7 +61,7 @@ import static com.airbnb.lottie.RenderMode.HARDWARE;
  *
  * @see <a href="http://airbnb.io/lottie">Full Documentation</a>
  */
-@SuppressWarnings({"unused", "WeakerAccess"}) public class LottieAnimationView extends AppCompatImageView {
+@SuppressWarnings({"unused", "WeakerAccess"}) public class LottieAnimationView extends ImageView {
 
   private static final String TAG = LottieAnimationView.class.getSimpleName();
   private static final LottieListener<Throwable> DEFAULT_FAILURE_LISTENER = new LottieListener<Throwable>() {
